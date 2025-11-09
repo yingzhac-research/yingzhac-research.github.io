@@ -1,32 +1,32 @@
-/* Custom styles - Widen main content area by 20% */
+/* Custom styles - Widen main content area by 40% total (20% + 20%) */
 
 /* Increase max-width for main content */
 #main-wrapper {
-  max-width: 1200px !important;
+  max-width: 1440px !important;
 }
 
 .container {
-  max-width: 1320px !important;
+  max-width: 1584px !important;
 }
 
 /* For larger screens, increase content width */
 @media (min-width: 1200px) {
   #core-wrapper {
-    max-width: 1140px !important;
+    max-width: 1368px !important;
   }
 
   #main-wrapper {
-    max-width: 1320px !important;
+    max-width: 1584px !important;
   }
 }
 
 @media (min-width: 1400px) {
   #core-wrapper {
-    max-width: 1320px !important;
+    max-width: 1584px !important;
   }
 
   #main-wrapper {
-    max-width: 1440px !important;
+    max-width: 1728px !important;
   }
 }
 
