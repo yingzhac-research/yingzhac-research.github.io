@@ -35,6 +35,17 @@ Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wi
 
 - **[Markdown & LaTeX 兼容性指南](docs/markdown-latex-guide.md)** - 解决 Markdown 和 LaTeX 公式渲染冲突的问题
 
+### Claude Skills
+
+本项目包含用于 Claude Code 的自定义 skills，帮助自动化博客写作流程：
+
+- **[Blog Writing Assistant](.claude/skills/blog-writing-assistant.md)** - 自动检测和修复 Markdown-LaTeX 公式冲突
+  - 实时公式检查
+  - 智能修复建议
+  - 最佳实践指导
+
+查看 [.claude/README.md](.claude/README.md) 了解如何使用这些 skills。
+
 ## Contributing
 
 This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
