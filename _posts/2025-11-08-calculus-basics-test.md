@@ -18,7 +18,11 @@ $$
 \lim_{x \to x_0} f(x) = L
 $$
 
-当且仅当对于任意 $\epsilon > 0$，存在 $\delta > 0$，使得当 $0 < |x - x_0| < \delta$ 时，有 $|f(x) - L| < \epsilon$。
+当且仅当对于任意 $\epsilon > 0$，存在 $\delta > 0$，使得：
+
+$$
+0 < |x - x_0| < \delta \implies |f(x) - L| < \epsilon
+$$
 
 ### 导数
 
