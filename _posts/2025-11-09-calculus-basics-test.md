@@ -1,6 +1,6 @@
 ---
 title: 微积分与线性代数基础测试
-date: 2025-11-09 15:30:00 +0800
+date: 2025-11-08 10:00:00 +0800
 categories: [Mathematics, Calculus]
 tags: [mathematics, calculus, linear-algebra, test]
 math: true
