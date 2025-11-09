@@ -1,0 +1,44 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Custom CSS - Widen main content area by 20% */
+
+/* Increase max-width for main content */
+#main-wrapper {
+  max-width: 1200px !important; /* Increased from ~1000px */
+}
+
+/* Adjust content container */
+.container {
+  max-width: 1320px !important; /* Increased by ~20% */
+}
+
+/* For larger screens, increase content width */
+@media (min-width: 1200px) {
+  #core-wrapper {
+    max-width: 1140px !important; /* Increased from ~950px */
+  }
+
+  #main-wrapper {
+    max-width: 1320px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  #core-wrapper {
+    max-width: 1320px !important;
+  }
+
+  #main-wrapper {
+    max-width: 1440px !important;
+  }
+}
+
+/* Adjust sidebar and main content ratio if needed */
+@media (min-width: 850px) {
+  #main > div.row {
+    justify-content: space-evenly;
+  }
+}
