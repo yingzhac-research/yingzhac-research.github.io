@@ -1,0 +1,192 @@
+---
+title: 微积分与线性代数基础测试
+date: 2025-11-09 15:30:00 +0800
+categories: [Mathematics, Calculus]
+tags: [mathematics, calculus, linear-algebra, test]
+math: true
+---
+
+这是一篇测试博客文章，用于验证LaTeX公式的渲染效果。
+
+## 基本微积分
+
+### 极限定义
+
+函数 $f(x)$ 在点 $x_0$ 处的极限定义为：
+
+$$
+\lim_{x \to x_0} f(x) = L
+$$
+
+当且仅当对于任意 $\epsilon > 0$，存在 $\delta > 0$，使得当 $0 < |x - x_0| < \delta$ 时，有 $|f(x) - L| < \epsilon$。
+
+### 导数
+
+函数 $f(x)$ 的导数定义为：
+
+$$
+f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+$$
+
+一些常见的导数公式：
+
+- 幂函数：$\frac{d}{dx}(x^n) = nx^{n-1}$
+- 指数函数：$\frac{d}{dx}(e^x) = e^x$
+- 三角函数：$\frac{d}{dx}(\sin x) = \cos x$
+
+### 积分
+
+定积分的定义（黎曼积分）：
+
+$$
+\int_a^b f(x) \, dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i^*) \Delta x
+$$
+
+牛顿-莱布尼茨公式：
+
+$$
+\int_a^b f(x) \, dx = F(b) - F(a)
+$$
+
+其中 $F(x)$ 是 $f(x)$ 的原函数。
+
+## 线性代数
+
+### 矩阵运算
+
+给定两个矩阵 $A$ 和 $B$：
+
+$$
+A = \begin{pmatrix}
+a_{11} & a_{12} & a_{13} \\
+a_{21} & a_{22} & a_{23} \\
+a_{31} & a_{32} & a_{33}
+\end{pmatrix}, \quad
+B = \begin{pmatrix}
+b_{11} & b_{12} \\
+b_{21} & b_{22} \\
+b_{31} & b_{32}
+\end{pmatrix}
+$$
+
+矩阵乘法 $C = AB$ 的元素为：
+
+$$
+c_{ij} = \sum_{k=1}^{n} a_{ik} b_{kj}
+$$
+
+### 特征值与特征向量
+
+对于方阵 $A$，如果存在标量 $\lambda$ 和非零向量 $\mathbf{v}$，使得：
+
+$$
+A\mathbf{v} = \lambda\mathbf{v}
+$$
+
+则称 $\lambda$ 为 $A$ 的**特征值**，$\mathbf{v}$ 为对应的**特征向量**。
+
+特征值可以通过求解特征方程得到：
+
+$$
+\det(A - \lambda I) = 0
+$$
+
+## 多元微积分
+
+### 偏导数
+
+对于多元函数 $f(x, y)$，偏导数定义为：
+
+$$
+\frac{\partial f}{\partial x} = \lim_{h \to 0} \frac{f(x+h, y) - f(x, y)}{h}
+$$
+
+### 梯度
+
+函数 $f(x, y, z)$ 的梯度是一个向量：
+
+$$
+\nabla f = \left( \frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z} \right)
+$$
+
+### 重积分
+
+二重积分的定义：
+
+$$
+\iint_D f(x, y) \, dA = \int_a^b \int_{g_1(x)}^{g_2(x)} f(x, y) \, dy \, dx
+$$
+
+## 级数与序列
+
+### 泰勒级数
+
+函数 $f(x)$ 在点 $x_0$ 处的泰勒级数展开：
+
+$$
+f(x) = \sum_{n=0}^{\infty} \frac{f^{(n)}(x_0)}{n!}(x - x_0)^n
+$$
+
+常见的泰勒级数：
+
+$$
+e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots
+$$
+
+$$
+\sin x = \sum_{n=0}^{\infty} \frac{(-1)^n x^{2n+1}}{(2n+1)!} = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots
+$$
+
+### 欧拉公式
+
+这是数学中最美的公式之一：
+
+$$
+e^{i\pi} + 1 = 0
+$$
+
+更一般的形式：
+
+$$
+e^{ix} = \cos x + i \sin x
+$$
+
+## 微分方程
+
+### 一阶线性微分方程
+
+形式为：
+
+$$
+\frac{dy}{dx} + P(x)y = Q(x)
+$$
+
+解的公式：
+
+$$
+y = e^{-\int P(x) \, dx} \left( \int Q(x) e^{\int P(x) \, dx} \, dx + C \right)
+$$
+
+### 二阶常系数线性微分方程
+
+形式为：
+
+$$
+ay'' + by' + cy = 0
+$$
+
+特征方程为：
+
+$$
+ar^2 + br + c = 0
+$$
+
+## 结论
+
+这篇文章展示了各种LaTeX公式的渲染效果，包括：
+- 行内公式（inline math）：如 $E = mc^2$
+- 块级公式（display math）：单独成行的公式
+- 矩阵、积分、求和、极限等各种数学符号
+- 多行公式和复杂的数学表达式
+
+希望这个测试能够验证博客系统对LaTeX的支持！
