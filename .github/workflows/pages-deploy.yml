@@ -4,6 +4,7 @@ on:
     branches:
       - main
       - master
+      - claude/add-blog-with-latex-011CUwx45gBj4W3njYvdKPbq
     paths-ignore:
       - .gitignore
       - README.md
