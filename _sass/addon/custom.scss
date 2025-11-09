@@ -1,24 +1,18 @@
----
----
-
-@import "main";
-
-/* Custom CSS - Widen main content area by 20% */
+/* Custom styles - Widen main content area by 20% */
 
 /* Increase max-width for main content */
 #main-wrapper {
-  max-width: 1200px !important; /* Increased from ~1000px */
+  max-width: 1200px !important;
 }
 
-/* Adjust content container */
 .container {
-  max-width: 1320px !important; /* Increased by ~20% */
+  max-width: 1320px !important;
 }
 
 /* For larger screens, increase content width */
 @media (min-width: 1200px) {
   #core-wrapper {
-    max-width: 1140px !important; /* Increased from ~950px */
+    max-width: 1140px !important;
   }
 
   #main-wrapper {
