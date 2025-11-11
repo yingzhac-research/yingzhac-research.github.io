@@ -69,9 +69,9 @@ pdf:
   number-sections: true
   colorlinks: true
 
-# Bibliography settings
-bibliography: references.bib
-csl: ieee.csl
+# Bibliography settings (optional - uncomment when needed)
+# bibliography: references.bib
+# csl: ieee.csl
 
 # Freeze computational output
 freeze: auto
