@@ -39,6 +39,32 @@
 
 /* Increase text brightness for dark theme - Better readability */
 
+/* Darken background to near-black for maximum contrast */
+body,
+#main-wrapper,
+#core-wrapper,
+.content {
+  background-color: #0a0a0a !important;
+}
+
+/* Sidebar background */
+#sidebar {
+  background-color: #0d0d0d !important;
+}
+
+/* Card backgrounds */
+.card,
+.post,
+article {
+  background-color: #0f0f0f !important;
+}
+
+/* Code block backgrounds */
+pre,
+code {
+  background-color: #1a1a1a !important;
+}
+
 /* ALL text should be pure white for maximum readability */
 #main-wrapper,
 #main-wrapper p,
