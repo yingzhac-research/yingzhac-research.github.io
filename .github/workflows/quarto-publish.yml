@@ -5,7 +5,7 @@ on:
     branches:
       - main
       - master
-      - quarto-migration
+      - claude/quarto-migration-011CUwx45gBj4W3njYvdKPbq
   workflow_dispatch:
 
 permissions:
