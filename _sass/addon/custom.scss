@@ -39,16 +39,18 @@
 
 /* Increase text brightness for dark theme - Better readability */
 
-/* Main content text - make it much brighter, almost pure white */
+/* ALL text should be pure white for maximum readability */
 #main-wrapper,
 #main-wrapper p,
 #main-wrapper li,
 #main-wrapper td,
-#main-wrapper .content {
-  color: #fafafa !important;
+#main-wrapper .content,
+#main-wrapper span,
+#main-wrapper div {
+  color: #ffffff !important;
 }
 
-/* Headings - pure white for maximum contrast */
+/* Headings - pure white */
 #main-wrapper h1,
 #main-wrapper h2,
 #main-wrapper h3,
@@ -72,9 +74,9 @@ code {
   color: #90d0ff !important;
 }
 
-/* Blockquotes - bright gray */
+/* Blockquotes - pure white */
 blockquote {
-  color: #f0f0f0 !important;
+  color: #ffffff !important;
 }
 
 /* Strong/bold text - pure white */
@@ -82,14 +84,23 @@ strong, b {
   color: #ffffff !important;
 }
 
-/* Ensure all text elements are bright */
-#main-wrapper span,
-#main-wrapper div {
-  color: inherit;
-}
-
-/* List markers */
+/* List markers - pure white */
 #main-wrapper ul li::marker,
 #main-wrapper ol li::marker {
-  color: #fafafa !important;
+  color: #ffffff !important;
+}
+
+/* Enable text selection everywhere - fix selection issue */
+* {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+}
+
+/* Make sure site title and tagline are selectable */
+.site-title,
+.site-subtitle {
+  user-select: text !important;
+  -webkit-user-select: text !important;
 }
