@@ -1,0 +1,24 @@
+---
+title: "欢迎来到研究博客"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  max-items: 10
+  feed: true
+page-layout: full
+title-block-banner: true
+---
+
+## 关于本站
+
+这是一个专注于数学、统计学和计算机科学的技术博客。
+
+所有文章都支持LaTeX数学公式，并且可以轻松转换为PDF格式用于学术出版。
+
+### 最新文章
+
+博客文章列表显示在下方。

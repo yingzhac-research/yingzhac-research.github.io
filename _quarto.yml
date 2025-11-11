@@ -1,0 +1,77 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "研究博客"
+  description: "技术博客 - 数学、统计与计算机科学"
+
+  navbar:
+    background: dark
+    search: true
+    left:
+      - text: "首页"
+        href: index.qmd
+      - text: "博客"
+        href: posts.qmd
+      - text: "关于"
+        href: about.qmd
+    right:
+      - icon: github
+        href: https://github.com/yingzhac-research/yingzhac-research.github.io
+
+  sidebar:
+    style: "floating"
+    search: true
+    contents:
+      - section: "博客文章"
+        contents:
+          - posts.qmd
+      - section: "文档"
+        contents:
+          - text: "Markdown-LaTeX 指南"
+            href: docs/markdown-latex-guide.md
+      - section: "Claude Skills"
+        contents:
+          - text: "博客写作助手"
+            href: .claude/skills/blog-writing-assistant.md
+
+  page-footer:
+    left: |
+      © 2025 Research Blog
+    right: |
+      使用 [Quarto](https://quarto.org/) 构建
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    code-copy: true
+    code-overflow: wrap
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <script>
+            MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
+              }
+            };
+          </script>
+
+# PDF output configuration (for future paper/book conversion)
+pdf:
+  documentclass: article
+  toc: true
+  number-sections: true
+  colorlinks: true
+
+# Bibliography settings
+bibliography: references.bib
+csl: ieee.csl
+
+# Freeze computational output
+freeze: auto

@@ -25,3 +25,9 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Quarto
+/.quarto/
+_site/
+*.html
+!index.html

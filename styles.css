@@ -1,0 +1,150 @@
+/* Custom styles for Quarto blog - Enhanced dark theme */
+
+/* Ensure maximum contrast for dark theme */
+body {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+}
+
+/* Main content area */
+#quarto-content main {
+  background-color: #0a0a0a !important;
+  color: #ffffff !important;
+}
+
+/* Headings - pure white */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+}
+
+/* Paragraphs and text */
+p, li, td, span {
+  color: #ffffff !important;
+}
+
+/* Links - bright blue */
+a {
+  color: #5eb3ff !important;
+}
+
+a:hover {
+  color: #90d0ff !important;
+}
+
+/* Code blocks */
+code {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+pre {
+  background-color: #1a1a1a !important;
+}
+
+pre code {
+  color: #ffffff !important;
+}
+
+/* Blockquotes */
+blockquote {
+  color: #ffffff !important;
+  border-left-color: #5eb3ff !important;
+}
+
+/* Tables */
+table {
+  color: #ffffff !important;
+}
+
+th {
+  background-color: #1a1a1a !important;
+  color: #ffffff !important;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #0d0d0d !important;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #0d0d0d !important;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff !important;
+}
+
+/* Cards (blog post previews) */
+.card {
+  background-color: #0f0f0f !important;
+  color: #ffffff !important;
+  border-color: #333333 !important;
+}
+
+.card-title {
+  color: #ffffff !important;
+}
+
+.card-text {
+  color: #ffffff !important;
+}
+
+/* Listing (blog post list) */
+.quarto-listing-category .category {
+  color: #ffffff !important;
+}
+
+.listing-item {
+  border-color: #333333 !important;
+}
+
+.listing-title {
+  color: #ffffff !important;
+}
+
+.listing-description {
+  color: #dddddd !important;
+}
+
+/* Footer */
+.footer {
+  background-color: #0d0d0d !important;
+  color: #ffffff !important;
+}
+
+/* Ensure text selection is enabled */
+* {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+}
+
+/* Math equations - MathJax */
+.MathJax, .mjx-chtml {
+  color: #ffffff !important;
+}
+
+/* Table of Contents */
+#TOC {
+  background-color: #0f0f0f !important;
+  color: #ffffff !important;
+}
+
+#TOC a {
+  color: #ffffff !important;
+}
+
+#TOC a:hover {
+  color: #5eb3ff !important;
+}
+
+/* Search box */
+.aa-Form {
+  background-color: #1a1a1a !important;
+}
+
+.aa-Input {
+  color: #ffffff !important;
+}
