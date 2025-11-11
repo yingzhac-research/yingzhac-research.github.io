@@ -39,45 +39,57 @@
 
 /* Increase text brightness for dark theme - Better readability */
 
-/* Main content text - make it brighter/whiter */
+/* Main content text - make it much brighter, almost pure white */
 #main-wrapper,
 #main-wrapper p,
 #main-wrapper li,
 #main-wrapper td,
 #main-wrapper .content {
-  color: #e8e8e8 !important;
+  color: #fafafa !important;
 }
 
-/* Headings - make them even brighter */
+/* Headings - pure white for maximum contrast */
 #main-wrapper h1,
 #main-wrapper h2,
 #main-wrapper h3,
 #main-wrapper h4,
 #main-wrapper h5,
 #main-wrapper h6 {
-  color: #f5f5f5 !important;
+  color: #ffffff !important;
 }
 
-/* Code blocks - ensure good contrast */
+/* Code blocks - pure white */
 code {
-  color: #f0f0f0 !important;
+  color: #ffffff !important;
 }
 
-/* Links - keep them visible */
+/* Links - bright blue for visibility */
 #main-wrapper a:not(.btn) {
-  color: #6ab7ff !important;
+  color: #5eb3ff !important;
 }
 
 #main-wrapper a:not(.btn):hover {
-  color: #8fcdff !important;
+  color: #90d0ff !important;
 }
 
-/* Blockquotes */
+/* Blockquotes - bright gray */
 blockquote {
-  color: #d0d0d0 !important;
+  color: #f0f0f0 !important;
 }
 
-/* Strong/bold text */
+/* Strong/bold text - pure white */
 strong, b {
   color: #ffffff !important;
+}
+
+/* Ensure all text elements are bright */
+#main-wrapper span,
+#main-wrapper div {
+  color: inherit;
+}
+
+/* List markers */
+#main-wrapper ul li::marker,
+#main-wrapper ol li::marker {
+  color: #fafafa !important;
 }
