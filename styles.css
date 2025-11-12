@@ -1,117 +1,298 @@
-/* Custom styles for Quarto blog - Enhanced dark theme */
+/* Custom styles for Quarto blog - Enhanced dark theme with better typography */
 
-/* Ensure maximum contrast for dark theme */
+/* ========== Typography & Fonts ========== */
+
+/* Import better fonts for Chinese and English */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap');
+
 body {
   background-color: #0a0a0a !important;
   color: #ffffff !important;
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !important;
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  font-weight: 300 !important;
 }
 
-/* Main content area */
+/* ========== Content Width & Spacing ========== */
+
+/* Increase max width for better use of screen space */
+#quarto-content {
+  max-width: 1400px !important;
+}
+
+.container,
+.container-fluid {
+  max-width: 1600px !important;
+}
+
+/* Main content area - wider and more spacious */
 #quarto-content main {
   background-color: #0a0a0a !important;
   color: #ffffff !important;
+  max-width: 900px !important;
+  padding: 40px 60px !important;
 }
 
-/* Headings - pure white */
+/* ========== Headings ========== */
+
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff !important;
+  font-family: 'Noto Serif SC', Georgia, serif !important;
+  font-weight: 700 !important;
+  margin-top: 2em !important;
+  margin-bottom: 1em !important;
+  line-height: 1.4 !important;
 }
 
-/* Paragraphs and text */
-p, li, td, span {
+h1 {
+  font-size: 2.5em !important;
+  margin-top: 0 !important;
+}
+
+h2 {
+  font-size: 2em !important;
+  border-bottom: 2px solid #333 !important;
+  padding-bottom: 0.3em !important;
+}
+
+h3 {
+  font-size: 1.6em !important;
+}
+
+h4 {
+  font-size: 1.3em !important;
+}
+
+/* ========== Paragraphs & Text ========== */
+
+p {
   color: #ffffff !important;
+  margin-bottom: 1.5em !important;
+  line-height: 1.9 !important;
 }
 
-/* Links - bright blue */
+li {
+  color: #ffffff !important;
+  margin-bottom: 0.8em !important;
+  line-height: 1.8 !important;
+}
+
+ul, ol {
+  margin-bottom: 1.5em !important;
+  padding-left: 2em !important;
+}
+
+/* ========== Links ========== */
+
 a {
   color: #5eb3ff !important;
+  text-decoration: none !important;
+  transition: color 0.2s ease !important;
 }
 
 a:hover {
   color: #90d0ff !important;
+  text-decoration: underline !important;
 }
 
-/* Code blocks */
+/* ========== Code Blocks ========== */
+
 code {
   background-color: #1a1a1a !important;
   color: #ffffff !important;
+  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace !important;
+  font-size: 0.9em !important;
+  padding: 2px 6px !important;
+  border-radius: 3px !important;
 }
 
 pre {
   background-color: #1a1a1a !important;
+  padding: 20px !important;
+  border-radius: 8px !important;
+  overflow-x: auto !important;
+  margin: 1.5em 0 !important;
+  line-height: 1.6 !important;
 }
 
 pre code {
   color: #ffffff !important;
+  padding: 0 !important;
+  background: none !important;
+  font-size: 0.95em !important;
 }
 
-/* Blockquotes */
+/* ========== Math Equations ========== */
+
+.MathJax, .mjx-chtml {
+  color: #ffffff !important;
+  font-size: 1.1em !important;
+}
+
+/* Display math (block equations) - add spacing */
+.display.math {
+  margin: 2em 0 !important;
+  font-size: 1.2em !important;
+}
+
+/* ========== Blockquotes ========== */
+
 blockquote {
   color: #ffffff !important;
-  border-left-color: #5eb3ff !important;
+  border-left: 4px solid #5eb3ff !important;
+  padding-left: 1.5em !important;
+  margin: 1.5em 0 !important;
+  font-style: italic !important;
+  background-color: #0f0f0f !important;
+  padding: 1em 1.5em !important;
+  border-radius: 4px !important;
 }
 
-/* Tables */
+/* ========== Tables ========== */
+
 table {
   color: #ffffff !important;
+  border-collapse: collapse !important;
+  width: 100% !important;
+  margin: 2em 0 !important;
 }
 
 th {
   background-color: #1a1a1a !important;
   color: #ffffff !important;
+  padding: 12px !important;
+  font-weight: 600 !important;
+  border: 1px solid #333 !important;
 }
 
-/* Sidebar */
-.sidebar {
-  background-color: #0d0d0d !important;
+td {
+  padding: 10px 12px !important;
+  border: 1px solid #333 !important;
 }
 
-/* Navigation */
+tr:hover {
+  background-color: #111 !important;
+}
+
+/* ========== Navigation ========== */
+
 .navbar {
   background-color: #0d0d0d !important;
+  padding: 1em 2em !important;
+  font-size: 1.1em !important;
 }
 
 .navbar-brand, .navbar-nav .nav-link {
   color: #ffffff !important;
+  font-weight: 400 !important;
 }
 
-/* Cards (blog post previews) */
+/* ========== Sidebar ========== */
+
+.sidebar {
+  background-color: #0d0d0d !important;
+  padding: 2em !important;
+}
+
+/* ========== Cards (Blog Post Previews) ========== */
+
 .card {
   background-color: #0f0f0f !important;
   color: #ffffff !important;
   border-color: #333333 !important;
+  border-radius: 8px !important;
+  padding: 1.5em !important;
+  margin-bottom: 1.5em !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.card:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(94, 179, 255, 0.2) !important;
 }
 
 .card-title {
   color: #ffffff !important;
+  font-size: 1.5em !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.5em !important;
 }
 
 .card-text {
-  color: #ffffff !important;
+  color: #dddddd !important;
+  line-height: 1.7 !important;
 }
 
-/* Listing (blog post list) */
+/* ========== Listing (Blog Post List) ========== */
+
 .quarto-listing-category .category {
   color: #ffffff !important;
+  background-color: #1a1a1a !important;
+  padding: 0.3em 0.8em !important;
+  border-radius: 4px !important;
+  font-size: 0.9em !important;
 }
 
 .listing-item {
   border-color: #333333 !important;
+  padding: 1.5em 0 !important;
 }
 
 .listing-title {
   color: #ffffff !important;
+  font-size: 1.4em !important;
+  font-weight: 600 !important;
 }
 
 .listing-description {
   color: #dddddd !important;
+  line-height: 1.7 !important;
+  margin-top: 0.5em !important;
 }
 
-/* Footer */
+/* ========== Footer ========== */
+
 .footer {
   background-color: #0d0d0d !important;
   color: #ffffff !important;
+  padding: 2em !important;
+  margin-top: 4em !important;
+  border-top: 1px solid #333 !important;
 }
+
+/* ========== Table of Contents ========== */
+
+#TOC {
+  background-color: #0f0f0f !important;
+  color: #ffffff !important;
+  padding: 1.5em !important;
+  border-radius: 8px !important;
+  border: 1px solid #333 !important;
+}
+
+#TOC a {
+  color: #ffffff !important;
+  line-height: 1.8 !important;
+}
+
+#TOC a:hover {
+  color: #5eb3ff !important;
+}
+
+/* ========== Search Box ========== */
+
+.aa-Form {
+  background-color: #1a1a1a !important;
+  border-radius: 6px !important;
+}
+
+.aa-Input {
+  color: #ffffff !important;
+  font-size: 1em !important;
+}
+
+/* ========== Miscellaneous ========== */
 
 /* Ensure text selection is enabled */
 * {
@@ -121,30 +302,50 @@ th {
   -ms-user-select: text !important;
 }
 
-/* Math equations - MathJax */
-.MathJax, .mjx-chtml {
-  color: #ffffff !important;
+/* Horizontal rules */
+hr {
+  border-color: #333 !important;
+  margin: 2em 0 !important;
 }
 
-/* Table of Contents */
-#TOC {
-  background-color: #0f0f0f !important;
-  color: #ffffff !important;
+/* Strong/bold text */
+strong, b {
+  font-weight: 700 !important;
 }
 
-#TOC a {
-  color: #ffffff !important;
+/* Emphasis/italic text */
+em, i {
+  font-style: italic !important;
 }
 
-#TOC a:hover {
-  color: #5eb3ff !important;
+/* Lists in content */
+.content ul li,
+.content ol li {
+  margin-bottom: 0.8em !important;
 }
 
-/* Search box */
-.aa-Form {
-  background-color: #1a1a1a !important;
+/* Improve readability with better spacing */
+.content > * + * {
+  margin-top: 1.5em !important;
 }
 
-.aa-Input {
-  color: #ffffff !important;
+/* ========== Responsive Design ========== */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px !important;
+  }
+
+  #quarto-content main {
+    padding: 20px 30px !important;
+    max-width: 100% !important;
+  }
+
+  h1 {
+    font-size: 2em !important;
+  }
+
+  h2 {
+    font-size: 1.6em !important;
+  }
 }
